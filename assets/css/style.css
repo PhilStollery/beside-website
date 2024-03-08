@@ -402,6 +402,11 @@ section {
     font-weight: 700;
     font-size: 26px;
     color: var(--accent);
+    padding-bottom: 1em;
+}
+
+.about .leadin {
+  font-weight: 600;
 }
 
 .about .content ul {
@@ -413,6 +418,13 @@ section {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+}
+
+.about .content .experience ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--beside-teal);
 }
 
 .about .content ul strong {
@@ -528,33 +540,22 @@ section {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #45505b;
+    color: var(--accent);
 }
 
 .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid var(--accent);
+    border-left: 2px solid var(--link);
     position: relative;
 }
 
-.resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    color: var(--accent);
-    margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-    font-size: 16px;
-    background: #f7f8f9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
+.resume .tag-line {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--link)
 }
 
 .resume .resume-item ul {
@@ -584,6 +585,14 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services .model {
+  color: var(--link);
+}
+
+.services h5 {
+  padding-top: 1em;
+}
+
 .services .icon-box {
     text-align: center;
     padding: 25px;
@@ -772,7 +781,7 @@ section {
 
 .testimonials .testimonial-item h4 {
     font-size: 14px;
-    color: #999;
+    color: var(--accent);
     margin: 0 0 15px 0;
 }
 
@@ -828,6 +837,11 @@ section {
 .contact .info {
     width: 100%;
     background: #fff;
+}
+
+.contact strong {
+  color: var(--link);
+  font-size: large;
 }
 
 .contact .info i {
