@@ -475,8 +475,9 @@
 
           <div class="col-lg-8 offset-lg-2 mt-5 mt-lg-0">
 
-            <form id="contact-form" role="form" class="php-email-form" action="/api/contact">
-              <input type="hidden" name="_redirect" value="https://test.beside.coach/thankyou.html" />
+            <form id="contact-form" role="form" class="php-email-form" action="https://api.web3forms.com/submit">
+              <input type="hidden" name="access_key" value="10a6fae6-a8bd-4dfd-b77e-86cef9650ce2">
+              <input type="hidden" name="redirect" value="https://test.beside.coach/thankyou.html" />
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -496,7 +497,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAAARvOlGj8Vrjm1k5"></div>
+              <!-- hCaptcha Spam Protection -->
+              <div class="h-captcha" data-captcha="true"></div>              
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
@@ -564,6 +566,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Required for hCaptcha -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 
 </body>
 
