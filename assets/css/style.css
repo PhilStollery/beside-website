@@ -415,7 +415,7 @@ section {
 }
 
 .about .content ul {
-
+  padding: 0;
 }
 
 .about .content ul li {
