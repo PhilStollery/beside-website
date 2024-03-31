@@ -295,6 +295,11 @@ h6 {
   #hero {
     padding-left: 160px;
   }
+
+  #hero img {
+    width: 200px;
+    padding-bottom: 80px;
+  }
 }
 
 #hero h1 {
@@ -344,6 +349,11 @@ h6 {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  #hero img {
+    width: 180px;
+    padding-bottom: 10em;  
   }
 }
 
@@ -409,9 +419,18 @@ section {
 .about .leadin {
   font-size: 26px;
   font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--beside-teal);
+}
+
+@media (max-width: 992px) {
+.about .leadin {
+  font-size: 26px;
+  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: var(--beside-teal);
+}
 }
 
 .about .content ul {
@@ -550,7 +569,6 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid var(--link);
   position: relative;
 }
 
@@ -572,18 +590,6 @@ section {
 
 .resume .resume-item:last-child {
   padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid var(--accent);
 }
 
 /*--------------------------------------------------------------
