@@ -280,6 +280,34 @@ h6 {
   background-color: var(--accent);
 }
 
+#mobile-contact-bar {
+  display: none;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+
+  #mobile-contact-bar {
+    display: block;
+    background: white;
+    box-shadow: 0 4px 4px rgba(96, 96, 96, 0.1);
+  }
+
+  #mobile-contact-bar a  {
+    font-size: 28px;
+    display: inline-block;
+    background: var(--link);
+    color: #fff;
+    line-height: 1;
+    padding: 9px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -353,7 +381,7 @@ h6 {
 
   #hero img {
     width: 180px;
-    padding-bottom: 10em;  
+    padding-bottom: 10em;
   }
 }
 
@@ -424,13 +452,13 @@ section {
 }
 
 @media (max-width: 992px) {
-.about .leadin {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: var(--beside-teal);
-}
+  .about .leadin {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--beside-teal);
+  }
 }
 
 .about .content ul {
@@ -818,6 +846,11 @@ section {
   font-style: italic;
   margin: 0 auto 15px auto;
   padding: 0 10px;
+}
+
+.testimonials .testimonial-item p strong {
+  color: var(--link);
+  font-size: 21px;
 }
 
 .testimonials .swiper-pagination {
