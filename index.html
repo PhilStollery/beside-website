@@ -1,67 +1,509 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#ebebeb">
-  <meta name="description" content="We break deadlocks. We celebrate successes and acknowledge progress. We keep going, building confidence and sustaining motivation.">
-  <title>Beside: Leadership coach, consultant and mentor.</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">  
-  <style>
-    @font-face {
-      font-family: 'Montserrat';
-      src: local('Montserrat Medium'), local('Montserrat-Medium'), url('/Montserrat-Medium.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-    }
-    
-    html, body {
-      background: #ebebeb;
-      font-family: 'Montserrat', sans-serif; 
-      font-size: 18px;
-    }
-    
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    img {
-      width: 50%;
-      height: auto;
-    }
-    
-    .email {
-      padding: 2em;
-    }
-    
-    @media (max-width: 600px) {
-      img {
-        width: 80%;  
-      }
-    }
-  </style>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Beside: Executive coaching, culture consultancy, and HR mentoring.</title>
+  <meta content="I'm here as your coach, consultant, and mentor. As a former global Chief People Officer, I've played integral roles in building and steering global
+    leadership teams through periods of transformational change and growth. I've partnered with, and coached,
+    many leaders including Founders and C-suite teams." name="description">
+  <meta content="Executive Coach, Culture Consultant, HR Mentor." name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  * Changed: Beside updated 30/1/2024
+  ======================================================== -->
 </head>
 
 <body>
 
-  <div class="container">
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
 
-    <img src="images/logo.svg" alt="Beside logo">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
+        </li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About me</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class='bx bx-leaf'></i>
+            <span>Executive Coach</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class='bx bx-show'></i>
+            <span>Culture Consultant</span></a></li>
+        <li><a href="#testimonials" class="nav-link scrollto"><i class='bx bxs-quote-alt-left'></i><span>What clients
+              say</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Work with
+              Beside</span></a>
+        </li>
+      </ul>
+    </nav><!-- .nav-menu -->
 
-    <p><strong>Coming soon.</strong></p>
+  </header><!-- End Header -->
 
-    <div class="email">
-      Connect with <a href="mailto:suzy@beside.coach">suzy@beside.coach</a>.
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col">
+          <img class="img-fluid" src="assets/img/logo.svg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1>Suzy Stollery</h1>
+          <p><span class="typed" data-typed-items="Executive Coach, Culture Consultant, HR Mentor, By your side"></span>
+          </p>
+        </div>
+      </div>
     </div>
+  </section><!-- End Hero -->
 
+  <!---->
+  <div id="mobile-contact-bar" class="sticky-top py-3">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-2">
+        <a href="#"><img class="img-fluid" src="assets/img/logo.svg"/></a>
+      </div>
+      <div class="mobile-links col-8">
+          <a href="mailto:suzy@beside.coach" class="emailme" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Email me" data-bs-placement="bottom" data-bs-custom-class="custom-popover">
+            <i class='bx bx-mail-send'></i></a>
+          <a href="https://www.linkedin.com/in/suzannestollery/" class="linkedin" data-bs-toggle="popover"
+            data-bs-trigger="hover focus" data-bs-content="Find me on LinkedIn" data-bs-placement="bottom"
+            data-bs-custom-class="custom-popover">
+            <i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
   </div>
 
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title px-4">
+          <h2>About me</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-10 mx-auto px-5 px-md-2 pe-lg-4">
+            <img id="profile" src="assets/img/profile-img.jpg" class="img-fluid"
+              alt="Profile picture of Suzy Stollery." />
+          </div>
+          <div class="col-lg-8 content px-4 px-md-2">
+            <p class="leadin">Welcome. I'm here as your coach, consultant and mentor. </p>
+            <p>As a Chief People Officer, I've held integral roles building and steering global leadership teams
+              through transformational change and growth.
+            </p>
+            <p>
+              From founder led start-ups to complex global organisations, I have a deep understanding of organisational
+              dynamics and their nuances. I help navigate challenges and identify opportunities, creating impact for all
+              stakeholders.
+            </p>
+            <p>
+              I coach leaders to sharpen their awareness and effectiveness. I consult and mentor to create successful
+              cultures that people want to be a part of, and where they can thrive.
+            </p>
+            <p>
+              I work with boards, c-suite teams, leadership teams and HR leaders. Start-ups, scale-ups, large
+              organisations and non-profits. </p>
+            <p><em style="color: var(--accent); font-weight: 600; font-size: 18px">I specialise in:</em>
+            </p>
+            <ul>
+              <li><strong>Executive and leadership one-on-one coaching programmes</strong>
+              </li>
+              <li><strong>Culture and HR strategy development</strong></li>
+              <li><strong>Mentoring HR leaders</strong> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-10 col-md-6 content pt-3 px-4 px-md-2 mx-auto">
+            <h3>Experience</h3>
+            <div class="row experience">
+              <div class="col-lg-6">
+                <ul>
+                  <li><strong>20+ years Leadership, Development, Coaching and HR
+                      experience</strong>
+                  </li>
+                  <li><strong>EMCC Accredited Executive Coach, Senior
+                      Practitioner</strong></li>
+                  <li><strong>ICF Accredited Emotions Coaching Practitioner</strong>
+                  </li>
+                  <li><strong>Leadership roles at Dyson, Pukka Herbs, Unilever, Lipton and Motorola</strong></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li> <strong>MA Human Resources Management</strong>
+                  </li>
+                  <li><strong>Fellow CIPD</strong></li>
+                  <li><strong>Board Trustee</strong></li>
+                  <li><strong>Mental Health First Aider (MHFA England)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Resume (Beside) Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title px-4">
+          <h2>Executive and Leadership Coaching</h2>
+          <strong class="tag-line">I challenge, encourage and support.</strong>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10 px-4 aos-init aos-animate mx-auto" data-aos="fade-left" data-aos-delay="100">
+            <div class="resume-item pb-0">
+              <p>Though already highly skilled and experienced, you may be stuck or feel there's something missing in
+                reaching your, or your teams', full potential.
+              </p>
+              <p>
+                You may be in a new role or striving for a change. Perhaps, you're a CEO seeking an open dialogue or a
+                founder scaling your business.
+              </p>
+              <p>
+                Together we identify the right approach for you to become more effective. I support you to navigate your
+                path forward with greater clarity and a stronger conviction.
+              </p>
+              <p><em style="color: var(--accent); font-weight: 600; font-size: 18px">I work with:</em></p>
+              <ul>
+                <li><strong>CEOs</strong> – new and established</li>
+                <li><strong>Founders</strong></li>
+                <li><strong>C-suite teams</strong> who set the direction and oversee operations</li>
+                <li>Up-and-coming <strong>leadership talent</strong></li>
+                <li><strong>HR leaders</strong></li>
+              </ul>
+              <h3 class="tag-line">With you. Beside you.</h3>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Services (How to) Section ======= -->
+    <section id="services" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title px-4">
+          <h2>Culture Consultancy and HR Mentoring</h2>
+          <strong class="tag-line">Growth, action and impact.</strong>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10 px-4 aos-init aos-animate mx-auto" data-aos="fade-left" data-aos-delay="100">
+            <div class="resume-item">
+              <p>Culture is either an externally facing asset or a liability. More than small gestures, or simply a
+                measure of how your people feel about working with you, when cultivated with care, culture is an
+                extremely potent competitive advantage.
+              </p>
+              <p>
+                I help CEOs and HR Leaders develop the interplay between strategy and culture. Whether seeking specific
+                interventions, ongoing mentoring or sweeping cultural change, I immerse myself to offer a fresh
+                perspective for meaningful progress and sustainable impact.
+              </p>
+              <p><em style="color: var(--accent); font-weight: 600; font-size: 18px">I work with:</em></p>
+              <ul>
+                <li><strong>SMEs</strong> – new and established</li>
+                <li><strong>Start-ups</strong> and <strong>scale-ups</strong></li>
+                <li><strong>Newly acquired businesses</strong> in large organisations</li>
+                <li><strong>Regions</strong> and <strong>markets</strong> in large organisations</li>
+                <li><strong>Non-profits</strong> and <strong>charities</strong></li>
+              </ul>
+              <h3 class="tag-line">Outside in. Inside out.</h3>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title px-4">
+          <h2>What clients say</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="zoom-in" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Will</h3>
+                <h4>Chief Executive Officer - Ecosurety</h4>
+                <p>
+                  <strong>“ </strong>Suzy helped me settle into a new CEO role in a new company and in a new industry. I
+                  found her thoughtful approach very helpful in getting to the core of issues and
+                  defining specific next steps. I would recommend Suzy to anyone looking for a caring,
+                  intelligent and insightful coach.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Anna</h3>
+                <h4>Strategy Director - Bray Leino</h4>
+                <p>
+                  <strong>“ </strong>
+                  Working with Suzy was a game-changer for me. I appreciated her professional yet down
+                  to earth style. Our coaching sessions were always purposeful and, very skilfully,
+                  she helped guide me to my own conclusions, with a clarity that I just couldn't
+                  create on my own.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Will</h3>
+                <h4>Chief Operating Officer - Ella's Kitchen</h4>
+                <p>
+                  <strong>“ </strong>
+                  Suzy creates an environment that is not just safe, but easy to express how I feel. I
+                  can now use emotions and feelings as information on what to do next, and I have a
+                  far greater awareness, understanding, and choice of how I want to be as a leader.
+                  It's been a brilliant experience all round.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Anne-Cecile</h3>
+                <h4>Commercial Strategy Director - Universal Pictures International</h4>
+                <p>
+                  <strong>“ </strong>
+                  Suzy is a natural coach! She created a safe environment and a space I could openly
+                  express myself. Her ability to listen and connect enabled me to see the paths and
+                  choices available to me and it truly amazed me. The pace and depth of each session
+                  were perfectly balanced too. I highly recommend Suzy.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Seb</h3>
+                <h4>Co-Founder - Pukka Herbs</h4>
+                <p>
+                  <strong>“ </strong>
+                  High emotional awareness coupled with practical professional clarity creates instant
+                  trust and respect. Having a particular skill at developing leadership talent, she
+                  successfully helped our directors grow with the pace of the business, as well as
+                  create an impactful team spirit, in the face of relentless change.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Kim</h3>
+                <h4>Commercial Director - Ella's Kitchen</h4>
+                <p>
+                  <strong>“ </strong>
+                  Suzy is a highly professional and warm coach who creates an open environment to
+                  explore vulnerabilities, thoughts, emotions and ideas which helped me navigate ways
+                  forward. I have benefited heavily from her thoughtful and astute questioning which
+                  created very positive changes in me personally and within my role.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Bruno</h3>
+                <h4>EMEA Senior Counsel - BASF</h4>
+                <p>
+                  <strong>“ </strong>
+                  I had the chance to work with Suzy when I was at a crossroads in my career and had
+                  recently taken a new role. I feel I have grown significantly and there is no doubt in
+                  my mind that Suzy, in the way she was engaged in our coaching sessions, has played a
+                  significant role in that growth. She just has this talent to bring out the best in
+                  people.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Ann</h3>
+                <h4>Director of Finance - NHS Trust</h4>
+                <p>
+                  <strong>“ </strong>
+                  Working with Suzy helped me evaluate the way I work and think about different ways
+                  to respond to problems which I'd previously struggled to solve. She also helped me
+                  to identify ways I could strengthen relationships with people with different styles
+                  of working to myself whilst developing different ways of thinking and operating.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Camilla</h3>
+                <h4>Co-Founder - Women's Work Lab</h4>
+                <p>
+                  <strong>“ </strong>
+                  Suzy's leadership coaching has been a transformational experience for both of us. She's helped us create an exceptionally strong foundation
+                  within our Co-Founder partnership &mdash; guiding us to see where our individual strengths
+                  lie, whilst also recognising how we complement one another. We feel that the work we've done will help us to weather any inevitable
+                  future storms and grow in a way that sees us both working at our best.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Kieran</h3>
+                <h4>Global Account Director - Aon</h4>
+                <p>
+                  <strong>“ </strong>
+                  Suzy worked with me when I was going through a period of real change in my
+                  professional
+                  life. I had just taken on a new role which was both demanding and high profile. Suzy
+                  brought a real wealth of experience, and her style is both calming and reassuring in
+                  equal measure. She is an informed, capable coach and very likeable on a personal
+                  level. I would have no hesitancy in recommending her.<strong>”</strong>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title px-4">
+          <h2>Work with Beside</h2>
+          <strong class="tag-line">Let's chat about how I can help you, your team and organisation.</strong>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 px-5 aos-init aos-animate mx-auto">
+            <p>One-on-one structured coaching programmes for leaders.</p>
+            <p>Consulting or mentoring – getting involved from within.
+            </p>
+            <p>Online. In person. On foot. Tailored. Constant progress.
+            </p>
+            <p>Email me: <a href="mailto:suzy@beside.coach">suzy@beside.coach</a>
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>
+        Suzy Stollery
+        <a href="mailto:suzy@beside.coach" class="emailme" data-bs-toggle="popover" data-bs-trigger="hover focus"
+          data-bs-content="Email me" data-bs-placement="bottom" data-bs-custom-class="custom-popover">
+          <i class='bx bx-mail-send'></i></a>
+        <a href="https://www.linkedin.com/in/suzannestollery/" class="linkedin" data-bs-toggle="popover"
+          data-bs-trigger="hover focus" data-bs-content="Find me on LinkedIn" data-bs-placement="bottom"
+          data-bs-custom-class="custom-popover">
+          <i class="bx bxl-linkedin"></i></a>
+      </h3>
+      <strong>Executive Coach, Culture Consultant, and HR Mentor.</strong>
+
+      <div class="row justify-content-evenly align-items-center gx-5 pt-5">
+        <div class="col-4 col-lg-2 col-md-3">
+          <img src="assets/img/hult-logo-black.svg" loading="lazy"
+            alt="Ashridge-Hult logo. I'm an Accredited Executive Coach at Hult Ashridge Executive Education."
+            data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="I'm an Accredited Executive Coach at Hult Ashridge Executive Education"
+            data-bs-placement="bottom" data-bs-custom-class="custom-popover" />
+        </div>
+        <div class="col-4 col-lg-2 col-md-3">
+          <img src="assets/img/EMCC accreditation logo SP.svg" loading="lazy"
+            alt="EIA EMCC logo. I'm a Global EMCC Accredited Coach at Senior Practitioner Level."
+            data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="I'm a Global EMCC Accredited Coach at Senior Practitioner Level" data-bs-placement="bottom"
+            data-bs-custom-class="custom-popover" />
+        </div>
+        <div class="col-3 col-lg-1 col-md-2">
+          <img src="assets/img/Mental-Health-First-Aider.svg" loading="lazy"
+            alt="Mental Health First Aider logo. I'm a Certified Mental Health First Aider." data-bs-toggle="popover"
+            data-bs-trigger="hover focus" data-bs-content="I'm a Certified Mental Health First Aider"
+            data-bs-placement="bottom" data-bs-custom-class="custom-popover" />
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; Copyright <strong><span>Beside Ltd</span></strong> | Registered company 14728891 | All Rights Reserved |
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
