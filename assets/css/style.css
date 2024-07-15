@@ -459,6 +459,10 @@ section {
     margin-bottom: 20px;
     color: var(--beside-teal);
   }
+
+  #about img {
+    padding-bottom: 2em;
+  }
 }
 
 .about .content ul {
