@@ -1110,6 +1110,10 @@ section .contact {
   }
 }
 
+#footer img {
+  width: 100%; /* fix for png not scaling */
+}
+
 #footer h3 a:hover {
   background: var(--accent);
   color: #fff;
