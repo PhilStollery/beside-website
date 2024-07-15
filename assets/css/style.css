@@ -619,6 +619,15 @@ section {
   padding-bottom: 0;
 }
 
+.resume .leadin {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--beside-teal);
+  text-align: center;
+  padding: 1em;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
