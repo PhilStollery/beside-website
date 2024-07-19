@@ -18,6 +18,7 @@
   --navbar: #868e96;
   --beside-teal: #5e9c97;
   --color-scheme: dark light;
+  --experience-box: #f7f8f9;
 }
 
 body {
@@ -322,6 +323,7 @@ h6 {
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
+    padding-top: 30vh;
   }
 
   #hero img {
@@ -459,6 +461,10 @@ section {
     margin-bottom: 20px;
     color: var(--beside-teal);
   }
+
+  #about img {
+    padding-bottom: 2em;
+  }
 }
 
 .about .content ul {
@@ -503,6 +509,33 @@ section {
   --bs-popover-body-color: var(--background);
   --bs-popover-box-shadow: var(bs-box-shadow-lg);
   --bs-popover-font-size: 16px;
+}
+
+#experience-box {
+  margin-top: 2em;
+  background-color: var(--experience-box);
+  border-radius: 1em;
+  padding: 2em;
+}
+
+#experience-box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#experience-box ul li {
+  padding-bottom: 1em;
+}
+
+#experience-box ul i {
+  font-size: 13px;
+  margin-right: 5px;
+  color: var(--beside-teal);
+}
+
+#experience-box .content :last-child {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -617,6 +650,16 @@ section {
 
 .resume .resume-item:last-child {
   padding-bottom: 0;
+}
+
+.resume .leadin {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--beside-teal);
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -1059,12 +1102,19 @@ section .contact {
 }
 
 #footer h3 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   position: relative;
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
+}
+
+#footer h3:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 #footer p {
@@ -1108,6 +1158,10 @@ section .contact {
     height: 40px;
     transition: 0.3s;
   }
+}
+
+#footer img {
+  width: 100%; /* fix for png not scaling */
 }
 
 #footer h3 a:hover {
