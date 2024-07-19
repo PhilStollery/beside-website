@@ -18,6 +18,7 @@
   --navbar: #868e96;
   --beside-teal: #5e9c97;
   --color-scheme: dark light;
+  --experience-box: #f7f8f9;
 }
 
 body {
@@ -322,6 +323,7 @@ h6 {
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
+    padding-top: 30vh;
   }
 
   #hero img {
@@ -441,7 +443,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: var(--link);
-  padding-bottom: 1em;
+  padding: 1em;
 }
 
 .about .leadin {
@@ -507,6 +509,30 @@ section {
   --bs-popover-body-color: var(--background);
   --bs-popover-box-shadow: var(bs-box-shadow-lg);
   --bs-popover-font-size: 16px;
+}
+
+#experience-box {
+  background-color: var(--experience-box);
+  border-radius: 1em;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+#experience-box ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#experience-box ul i {
+  font-size: 20px;
+  margin-right: 5px;
+  color: var(--link);
+  line-height: 1.5em;
+}
+
+#experience-box .content :last-child {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -624,12 +650,13 @@ section {
 }
 
 .resume .leadin {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--beside-teal);
   text-align: center;
-  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -1072,12 +1099,19 @@ section .contact {
 }
 
 #footer h3 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   position: relative;
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
+}
+
+#footer h3:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 #footer p {
