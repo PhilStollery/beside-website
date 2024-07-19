@@ -443,7 +443,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: var(--link);
-  padding: 1em;
+  padding-bottom: 1em;
 }
 
 .about .leadin {
@@ -512,10 +512,10 @@ section {
 }
 
 #experience-box {
+  margin-top: 2em;
   background-color: var(--experience-box);
   border-radius: 1em;
-  margin-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em;
 }
 
 #experience-box ul {
