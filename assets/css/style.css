@@ -531,7 +531,7 @@ section {
 #experience-box ul i {
   font-size: 13px;
   margin-right: 5px;
-  color: var(--link);
+  color: var(--accent);
 }
 
 #experience-box .content :last-child {
